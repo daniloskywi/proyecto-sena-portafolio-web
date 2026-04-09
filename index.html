@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio Web</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+        <body>
+            <label class="switch">
+                <input type="checkbox" id="boton-color">
+                <span class="slider"></span>
+            </label>
+            <header>
+                <div class="brand">
+                    <img src="./Img/D.R.Z Logo Elegante Transparente.png" alt="Danilo Rodriguez - Desarrollador Web" class="logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#Inicio">Inicio</a></li>
+                        <li><a href="#Sobre-Mi">Sobre Mi</a></li>
+                        <li><a href="#Proyectos">Proyectos</a></li>                  
+                        <li><a href="#Contacto-informacion">Contactos</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section id="Inicio">
+                    <h1>Hola, soy Danilo Rodriguez Diaz</h1>
+                    <p>Aprendiz SENA | Diseñador y Desarrollador Web</p>
+                    <div>
+                        <ul>
+                            <li><a href="https://github.com/" target="_blank"> <i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/danilo-rodriguez-a19590254/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/danilo.diaz.820377?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/danilohei2002/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="pre-presentacion">
+                        <div><!-- En ver presentacion, agregar un imagen, se vera mas adelante-->
+                            <img src="./Img/foto de fondo 2.JPG" alt="">
+                        </div>
+                        <button id="btn-presentacion">Ver presentación</button>
+                    </div>
+                    
+                    <!-- Modal de presentación -->
+                    <div id="modal-presentacion" class="modal"> 
+                        <div class="modal-contenido">
+                            <span class="cerrar-modal">&times;</span>
+                            <h2>Presentación</h2>
+                            <p>¡Hola! Soy Danilo Rodriguez Diaz, un apasionado aprendiz del S
+                        </div>
+                    </div>
+                </section>        
+                 
+
+                <section id="Sobre-Mi">
+                    <div>
+                        <h2>Sobre Mi</h2>
+                        <h3>Mi Biografia</h3>
+                        <p>Mi objetivo inmediato es aplicar mis conocimientos en un entorno real de producción a través de mi etapa práctica, contribuyendo al desarrollo de aplicaciones que mejoren la operatividad de las empresas.</p>
+
+                        <h3>Experiencia</h3>
+                        <ul>
+                            <li>✅ ​Proyecto Integrador SENA - Portafolio Web (2026)</li>
+                            <li>✅​ Práctica/Rol en Analisis y desarrollo de Sotfware (2026)</li>
+                        </ul>
+                        <h3>Habilidades Técnicas</h3>
+                        <ul class="lista-habilidades">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Figma</li>
+                            <li>Prototipado</li>
+                            <li>Metodologias Agiles</li>
+                        </ul>
+                        <a href="./documentos/Danilo Rodriguez Diaz.pdf" class="btn-primario" download="CV Danilo Rodriguez Diaz">Descargar CV</a>
+                    </div>
+                </section>
+
+                <section id="Proyectos">
+                    <h2>Galeria de proyectos</h2>
+                    <div class="Contenedores">   
+
+                        <article>
+                            <img src="https://via.placeholder.com/300x200" alt="Nombre del proyecto 1">
+                            <h3>Nombre del proyecto 1</h3>
+                            <p>Un breve resumen de mi experiencia en proyectos</p>
+                            
+                            <a href="#demo" class="ver-demo">Ver demo</a>                                                                 
+                        </article>
+
+                        <article>
+                            <img src="..." alt="...">
+                            <h3>Nombre del proyecto 1</h3>
+                            <p>Un breve resumen de mi experiencia en proyectos</p>
+                            
+                            <a href="#demo" class="ver-demo">Ver demo</a>
+                                                
+                        
+                        </article>
+
+                        <article>
+                            <img src="..." alt="...">
+                            <h3>Nombre del proyecto 1</h3>
+                            <p>Un breve resumen de mi experiencia en proyectos</p>
+                            
+                            <a href="#demo" class="ver-demo">Ver demo</a>
+                                            
+                        </article>
+
+                    </div>
+                </section>
+
+                <section id="Contacto-informacion">
+                        <h2>¿Tienes una idea? Conversemos.</h2>
+                
+                        <div class="info-dep" >
+                            <p>Información de contacto</p>
+                            <ul>
+                                <li>Email: Danilohei@gmail.com</li>
+                                <li>Telefono: 3046622317</li>
+                                <li>Ubicación: Sibate, Cundinamarca</li>
+                            </ul>
+                        </div>
+                    <div class="info-formulario">
+                            <form action="">
+                                <label for="nombre">Tu nombre:</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos">
+
+                                <label for="email"> Tu email:</label>
+                                <input type="email" id="email" name="email" required placeholder="Email...">
+
+                                <label for="mensaje">Detalla tu idea de proyecto:</label>
+                                <textarea name="mensaje" id="mensaje"></textarea>
+                                <button type="submit">Mensaje</button>
+                        </form>
+                    </div>                  
+                </section>
+            </main>
+            <footer>
+                <p>Danilo Rodriguez Diaz @2026</p>
+            </footer>
+            <script src="./Poo.js"></script>
+            <script src="./script.js"></script>
+        </body>
+</html>

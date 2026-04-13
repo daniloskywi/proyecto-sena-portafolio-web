@@ -1,19 +1,38 @@
-const miForm = document.querySelector("form");//Mandamos a llamar nuestro formulario
+const miForm = document.querySelector("form");
 
 miForm.addEventListener("submit", function(evento){
+    evento.preventDefault();
 
-    evento.preventDefault()//deteccion de envio automatico
-
-    const UsuarioNombre = document.getElementById("nombre").value;
-    const UsuarioEmail = document.getElementById("email").value;
+    const UsuarioNombre  = document.getElementById("nombre").value;
+    const UsuarioEmail   = document.getElementById("email").value;
     const UsuarioMensaje = document.getElementById("mensaje").value;
-    if(UsuarioNombre === "" || UsuarioEmail === "" || UsuarioMensaje === ""){
-        alert("Porfavor, completa los campos antes de enviar ")
-    }else{
-        alert("✅El mensaje se envio correctamente")
-    }
-    miForm.reset();
 
+    if(UsuarioNombre === "" || UsuarioEmail === "" || UsuarioMensaje === ""){
+        alert("Por favor, completa los campos antes de enviar");
+        return;
+    }
+
+    // Enviamos los datos al servidor
+    fetch('/contacto', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            nombre:  UsuarioNombre,
+            email:   UsuarioEmail,
+            mensaje: UsuarioMensaje
+        })
+    })
+    .then(function(respuesta){
+        return respuesta.json();
+    })
+    .then(function(datos){
+        if(datos.ok){
+            alert("✅ Mensaje enviado correctamente");
+            miForm.reset();
+        } else {
+            alert("❌ Hubo un error al enviar");
+        }
+    });
 });
 
  //analizar codigo

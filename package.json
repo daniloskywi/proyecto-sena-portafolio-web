@@ -1,0 +1,24 @@
+{
+  "name": "pagina-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniloskywi/proyecto-sena-portafolio-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniloskywi/proyecto-sena-portafolio-web/issues"
+  },
+  "homepage": "https://github.com/daniloskywi/proyecto-sena-portafolio-web#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.22.0"
+  }
+}

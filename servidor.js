@@ -11,7 +11,7 @@ app.use(express.json());
 // Le decimos donde estan los archivos de tu pagina web
 app.use(express.static('./'));
 
-// Conexion con MySQL - aqui van tus datos
+// Conexion con MySQL 
 const conexion = mysql.createConnection({
     host: 'localhost',
     user: 'root',

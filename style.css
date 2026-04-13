@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* ========================================
+   Variables globales y tema
+   ======================================== */
 :root{
     /*Colores*/
     --color-primario:#58a6ff; 
@@ -28,7 +31,10 @@ body.dark {
     --color-primario: #007bff; 
 }
 
-/*Estructura de pagina*/
+/* ========================================
+   Estilos base
+   ======================================== */
+
 body{/*Estrutura de fondo*/
     color: var(--color-texto);
     background-color: var(--color-fondo);
@@ -40,12 +46,16 @@ body{/*Estrutura de fondo*/
     font-family: var(--fuente-principal);
     padding-top: 80px; 
 }
-/*Textos - Pagina y grosor*/
+/*  ======================================== 
+    Textos - Pagina y grosor
+    ========================================*/
 h1, h2, h3{
     color: var(--color-primario);
    font-weight: var(--Grosor-letras);
 }
-/*Listas de paginas*/
+/*  ======================================== 
+    Listas de paginas
+    ========================================*/
 a{
     text-decoration: none;
     color: var(--color-texto);
@@ -55,7 +65,10 @@ a:hover{
     color: var(--color-primario);
 }
 
-/*header de pagina*/
+/* ========================================
+   Header y navegación
+   ======================================== */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -71,6 +84,9 @@ header{
     transition: transform 0.3s ease;
 }
 
+/* ========================================
+   Sección Inicio
+   ======================================== */
 #Inicio {
     min-height: 100vh;
     display: flex;
@@ -82,7 +98,9 @@ header{
     position: relative;
 }
 
-/* Badge "Disponible para proyectos" */
+/* ======================================== 
+    Badge "Disponible para proyectos" 
+    ========================================*/
 .badge-disponible {
     display: inline-flex;
     align-items: center;
@@ -119,7 +137,9 @@ header{
     100% { transform: scale(2.2); opacity: 0; }
 }
 
-/* Titulo principal */
+/* ======================================== 
+    Titulo principal   
+    ========================================*/
 #Inicio h1 {
     font-size: 42px;
     font-weight: 700;
@@ -131,7 +151,9 @@ header{
     color: var(--color-primario);
 }
 
-/* Efecto de escritura */
+/*  ======================================== 
+    Efecto de escritura 
+    ======================================== */
 .typing-wrap {
     height: 30px;
     overflow: hidden;
@@ -160,7 +182,9 @@ header{
     50%      { border-color: transparent; }
 }
 
-/* Redes sociales */
+/* ========================================
+    Redes sociales 
+    ========================================*/
 .redes-sociales {
     display: flex;
     gap: 12px;
@@ -189,7 +213,9 @@ header{
     transform: translateY(-3px);
 }
 
-/* Botones */
+/*  ======================================== 
+    Botones 
+    ======================================== */
 .botones-inicio {
     display: flex;
     gap: 12px;
@@ -235,7 +261,9 @@ header{
     color: var(--color-primario);
 }
 
-/* Indicador de scroll */
+/*  ========================================
+    Indicador de scroll 
+    ========================================*/
 .scroll-hint {
     position: absolute;
     bottom: 24px;
@@ -256,7 +284,9 @@ header{
     background: linear-gradient(to bottom, #484f58, transparent);
 }
 
-/*Modal de presentación*/
+/* ========================================
+   Modal de presentación
+   ======================================== */
 .modal{
     display: none;
     position: fixed;
@@ -330,13 +360,9 @@ main div ul{
     flex-direction: column; 
 }
 
-/*el a:hover puede desaparecer por modificacion. No se toca de momento*/
-
-
-
-
-/*Seccion sobre Mi*/
-
+/* ========================================
+   Sección Sobre Mi
+   ======================================== */
 #Sobre-Mi {
     background-color: var(--color-blanco);
     padding: 80px 5%;
@@ -519,7 +545,9 @@ div li{
     color: var(--color-blanco);
 }
 
-/*Seccion Proyectos */
+/* ========================================
+   Sección Proyectos
+   ======================================== */
 #Proyectos {
     padding: 80px 5%;
     background: rgba(5, 10, 18, 0.65);
@@ -667,7 +695,9 @@ div li{
     }
 }
 
-/*Seccion Contacto*/
+/* ========================================
+   Sección Contacto
+   ======================================== */
 
 #Contacto-informacion {
     padding: 80px 5%;
@@ -826,14 +856,9 @@ div li{
     }
 }
 
-
-
-
-
-
-
-
-/*Footer*/
+/* ========================================
+   Footer
+   ======================================== */
 
 footer{
     text-align: center;
@@ -842,7 +867,10 @@ footer{
     padding: 20px;
 }
 
-/*modo oscuro */
+/* ========================================
+   Modo oscuro / switch
+   ======================================== */
+
 .switch {
     position: fixed;
     top: 230px;
@@ -890,7 +918,10 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-/*Responsive*/
+/* ========================================
+   Responsive general
+   ======================================== */
+
 @media(max-width: 780px){
     .Contenedores{
         display: flex;

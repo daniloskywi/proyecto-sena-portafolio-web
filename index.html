@@ -7,236 +7,238 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
-        <body>
-            <label class="switch">
-                <input type="checkbox" id="boton-color">
-                <span class="slider"></span>
-            </label>
-            <header>
-                <div class="brand">
-                    <img src="./Img/D.R.Z Logo Elegante Transparente.png" alt="Danilo Rodriguez - Desarrollador Web" class="logo">
+    <body>
+            <!-- Header de pagina web-->
+        <label class="switch">
+            <input type="checkbox" id="boton-color">
+            <span class="slider"></span>
+        </label>
+        <header>
+            <div class="brand">
+                <img src="./Img/D.R.Z Logo Elegante Transparente.png" alt="Danilo Rodriguez - Desarrollador Web" class="logo">
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#Inicio">Inicio</a></li>
-                        <li><a href="#Sobre-Mi">Sobre Mi</a></li>
-                        <li><a href="#Proyectos">Proyectos</a></li>                  
-                        <li><a href="#Contacto-informacion">Contactos</a></li>
+            <nav>
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Sobre-Mi">Sobre Mi</a></li>
+                    <li><a href="#Proyectos">Proyectos</a></li>                  
+                    <li><a href="#Contacto-informacion">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <!-- Contenido principal -->
+        <main>
+            <section id="Inicio">
+                <div class="badge-disponible">
+                    <span class="badge-dot"></span> Disponible para proyectos
+                </div>
+
+                <h1>Hola, soy <span class="nombre-azul">Danilo Rodriguez Diaz</span></h1>
+
+                <div class="typing-wrap">
+                <span class="typing">Aprendiz SENA | Diseñador y Desarrollador Web</span>
+                </div>
+                    <ul class="redes-sociales">
+                        <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/danilo-rodriguez-a19590254/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/danilo.diaz.820377" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/danilohei2002/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                     </ul>
-                </nav>
-            </header>
-            <main>
-                <section id="Inicio">
-    <div class="badge-disponible">
-        <span class="badge-dot"></span> Disponible para proyectos
-    </div>
-
-    <h1>Hola, soy <span class="nombre-azul">Danilo Rodriguez Diaz</span></h1>
-
-    <div class="typing-wrap">
-        <span class="typing">Aprendiz SENA | Diseñador y Desarrollador Web</span>
-    </div>
-
-    <ul class="redes-sociales">
-        <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/danilo-rodriguez-a19590254/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-        <li><a href="https://www.facebook.com/danilo.diaz.820377" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="https://www.instagram.com/danilohei2002/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-    </ul>
-
-    <div class="botones-inicio">
-        <button id="btn-presentacion" class="btn-primario-inicio">Ver presentación</button>
-        <a href="./documentos/Danilo Rodriguez Diaz.pdf" class="btn-secundario-inicio" download>Descargar CV</a>
-    </div>
-
-    <div class="scroll-hint">
-        <span>scroll</span>
-        <div class="scroll-arrow"></div>
-    </div>
-
-    <!-- Modal de presentación -->
-    <div id="modal-presentacion" class="modal">
-        <div class="modal-contenido">
-            <span class="cerrar-modal">&times;</span>
-            <h2>Presentación</h2>
-            <p>¡Hola! Soy Danilo Rodriguez Diaz, un apasionado aprendiz del SENA.</p>
-        </div>
-    </div>
-</section>
-                 
-
-                <section id="Sobre-Mi">
-    <div class="sobre-mi-grid">
-
-        <div class="sobre-mi-texto">
-            <p class="sm-label">Sobre mí</p>
-            <h2>Diseñador &amp; Desarrollador Web</h2>
-
-            <p class="sm-bio">Mi objetivo inmediato es aplicar mis conocimientos en un entorno real de producción a través de mi etapa práctica, contribuyendo al desarrollo de aplicaciones que mejoren la operatividad de las empresas.</p>
-
-            <p class="sm-subtitulo">Experiencia</p>
-            <div class="exp-item">
-                <div class="exp-dot"></div>
-                <div class="exp-texto">Proyecto Integrador SENA — Portafolio Web <span class="exp-año">2026</span></div>
-            </div>
-            <div class="exp-item">
-                <div class="exp-dot"></div>
-                <div class="exp-texto">Práctica en Análisis y Desarrollo de Software <span class="exp-año">2026</span></div>
-            </div>
-
-            <p class="sm-subtitulo">Habilidades técnicas</p>
-            <ul class="lista-habilidades">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Figma</li>
-                <li>Prototipado</li>
-                <li>Metodologias Agiles</li>
-            </ul>
-
-            <a href="./documentos/Danilo Rodriguez Diaz.pdf" class="btn-primario" download="CV Danilo Rodriguez Diaz">⬇ Descargar CV</a>
-        </div>
-
-        <div class="sobre-mi-foto">
-            <div class="foto-placeholder">
-                <!-- Cuando tengas tu foto, reemplaza este div por: -->
-                <!-- <img src="./Img/tu-foto.jpg" alt="Danilo Rodriguez" class="foto-perfil"> -->
-                <span class="foto-icono">🖼</span>
-                <span>Tu foto aquí</span>
-            </div>
-            <div class="foto-tag">
-                <div class="foto-tag-dot"></div>
-                <span>Disponible para proyectos</span>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section id="Proyectos">
-    <div class="proy-header">
-        <p class="proy-label">Mis trabajos</p>
-        <h2>Galería de proyectos</h2>
-    </div>
-
-    <div class="proy-grid">
-
-        <article class="proy-card">
-            <div class="proy-img">
-                <!-- Cuando tengas la imagen reemplaza este div por: -->
-                
-            <img src="./Img/HtmlCss.png" alt="Frontend">         
-            </div>
-            <div class="proy-body">
-                <span class="proy-tag">HTML / CSS</span>
-                <h3>Diseño Frontend</h3>
-                <p>Diseño responsivo y atractivo para aplicaciones web.</p>
-                <div class="proy-links">
-                    <a href="#" class="proy-btn-demo">Ver demo</a>
-                    <a href="https://github.com/daniloskywi/proyecto-sena-portafolio-web/blob/main/index.html" class="proy-btn-code">Código</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="proy-card">
-            <div class="proy-img">
-                <img src="./Img/JavaScript.png" alt="Codigo JavaScript"> 
-            </div>
-            <div class="proy-body">
-                <span class="proy-tag">JavaScript</span>
-                <h3>Codigo JavaScript</h3>
-                <p>Desarrollo y manipulación JavaScript</p>
-                <div class="proy-links">
-                    <a href="#" class="proy-btn-demo">Ver demo</a>
-                    <a href="https://github.com/daniloskywi/proyecto-sena-portafolio-web/blob/main/script.js" class="proy-btn-code">Código</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="proy-card">
-            <div class="proy-img">
-                
-                <img src="./Img/Mysql.png" alt="Node.js / MySQL">
-            </div>
-            <div class="proy-body">
-                <span class="proy-tag">Node.js / MySQL</span>
-                <h3>Manipulación de MySQL</h3>
-                <p>Breve descripción de lo que hace este proyecto.</p>
-                <div class="proy-links">
-                    <a href="#" class="proy-btn-demo">Ver demo</a>
-                    <a href="https://github.com/daniloskywi/proyecto-sena-portafolio-web/blob/main/server.js" class="proy-btn-code">Código</a>
-                </div>
-            </div>
-        </article>
-
-    </div>
-</section>
-
-               <section id="Contacto-informacion">
-    <div class="cont-header">
-        <p class="cont-label">Contacto</p>
-        <h2>¿Tienes una idea? Conversemos.</h2>
-        <p>Estoy disponible para proyectos freelance y oportunidades laborales.</p>
-    </div>
-
-    <div class="cont-grid">
-
-        <div class="cont-info">
-            <p class="cont-info-titulo">Información de contacto</p>
-
-            <div class="cont-item">
-                <div class="cont-icono">✉</div>
-                <div>
-                    <p class="cont-item-label">Email</p>
-                    <p class="cont-item-valor">Danilohei@gmail.com</p>
-                </div>
-            </div>
-
-            <div class="cont-item">
-                <div class="cont-icono">📱</div>
-                <div>
-                    <p class="cont-item-label">Teléfono</p>
-                    <p class="cont-item-valor">3046622317</p>
-                </div>
-            </div>
-
-            <div class="cont-item">
-                <div class="cont-icono">📍</div>
-                <div>
-                    <p class="cont-item-label">Ubicación</p>
-                    <p class="cont-item-valor">Sibaté, Cundinamarca</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="cont-form">
-            <form action="">
-                <div class="form-grupo">
-                    <label for="nombre">Tu nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos">
+                <div class="botones-inicio">
+                    <button id="btn-presentacion" class="btn-primario-inicio">Ver presentación</button>
+                    <a href="./documentos/Danilo Rodriguez Diaz.pdf" class="btn-secundario-inicio" download>Descargar CV</a>
                 </div>
 
-                <div class="form-grupo">
-                    <label for="email">Tu email</label>
-                    <input type="email" id="email" name="email" placeholder="Email..." required>
+                <div class="scroll-hint">
+                    <span>scroll</span>
+                    <div class="scroll-arrow"></div>
                 </div>
 
-                <div class="form-grupo">
-                    <label for="mensaje">Tu mensaje</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="Detalla tu idea de proyecto..."></textarea>
+            <!-- Modal de presentación -->
+                <div id="modal-presentacion" class="modal">
+                    <div class="modal-contenido">
+                        <span class="cerrar-modal">&times;</span>
+                        <h2>Presentación</h2>
+                        <p>¡Hola! Soy Danilo Rodriguez Diaz, un apasionado aprendiz del SENA.</p>
+                    </div>
+                    </div>
+            </section>
+
+
+            <!--Seccion sobre mi-->            
+            <section id="Sobre-Mi">
+                <div class="sobre-mi-grid">
+
+                <div class="sobre-mi-texto">
+                    <p class="sm-label">Sobre mí</p>
+                    <h2>Diseñador &amp; Desarrollador Web</h2>
+
+                    <p class="sm-bio">Mi objetivo inmediato es aplicar mis conocimientos en un entorno real de producción a través de mi etapa práctica, contribuyendo al desarrollo de aplicaciones que mejoren la operatividad de las empresas.</p>
+
+                    <p class="sm-subtitulo">Experiencia</p>
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-texto">Proyecto Integrador SENA — Portafolio Web <span class="exp-año">2026</span></div>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-texto">Práctica en Análisis y Desarrollo de Software <span class="exp-año">2026</span></div>
+                    </div>
+
+                    <p class="sm-subtitulo">Habilidades técnicas</p>
+                    <ul class="lista-habilidades">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Figma</li>
+                        <li>Prototipado</li>
+                        <li>Metodologias Agiles</li>
+                    </ul>
+
+                    <a href="./documentos/Danilo Rodriguez Diaz.pdf" class="btn-primario" download="CV Danilo Rodriguez Diaz">⬇ Descargar CV</a>
                 </div>
 
-                <button type="submit">Enviar mensaje</button>
-            </form>
-        </div>
+                <div class="sobre-mi-foto">
+                    <div class="foto-placeholder">                       
+                        <span class="foto-icono">🖼</span>
+                        <span>Tu foto aquí</span>
+                    </div>
+                    <div class="foto-tag">
+                        <div class="foto-tag-dot"></div>
+                        <span>Disponible para proyectos</span>
+                    </div>
+                    </div>
 
-    </div>
-</section> 
-            </main>
-            <footer>
-                <p>Danilo Rodriguez Diaz @2026</p>
-            </footer>
+                    </div>
+                </section>
+
+
+                <!--Seccion de proyectos-->
+                <section id="Proyectos">
+                    <div class="proy-header">
+                        <p class="proy-label">Mis trabajos</p>
+                        <h2>Galería de proyectos</h2>
+                        </div>
+                   <div class="proy-grid">
+
+                <article class="proy-card">
+                    <div class="proy-img">
+                        
+                        <img src="./Img/HtmlCss.png" alt="Frontend">         
+                        </div>
+                        <div class="proy-body">
+                            <span class="proy-tag">HTML / CSS</span>
+                            <h3>Diseño Frontend</h3>
+                            <p>Diseño responsivo y atractivo para aplicaciones web.</p>
+                        <div class="proy-links">
+                            <a href="#" class="proy-btn-demo">Ver demo</a>
+                            <a href="https://github.com/daniloskywi/proyecto-sena-portafolio-web/blob/main/index.html" class="proy-btn-code" target="_blank">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="proy-card">
+                    <div class="proy-img">
+                        <img src="./Img/JavaScript.png" alt="Codigo JavaScript"> 
+                    </div>
+                    <div class="proy-body">
+                        <span class="proy-tag">JavaScript</span>
+                        <h3>Codigo JavaScript</h3>
+                        <p>Desarrollo y manipulación JavaScript</p>
+                        <div class="proy-links">
+                            <a href="#" class="proy-btn-demo">Ver demo</a>
+                            <a href="https://github.com/daniloskywi/proyecto-sena-portafolio-web/blob/main/script.js" class="proy-btn-code" target="_blank">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="proy-card">
+                    <div class="proy-img">
+
+                        <img src="./Img/Mysql.png" alt="Node.js / MySQL">
+                    </div>
+                    <div class="proy-body">
+                        <span class="proy-tag">Node.js / MySQL</span>
+                        <h3>Manipulación de MySQL</h3>
+                        <p>Creacion y manipulación de bases de datos MySQL.</p>
+                        <div class="proy-links">
+                            <a href="#" class="proy-btn-demo">Ver demo</a>
+                            <a href="https://github.com/daniloskywi/proyecto-sena-portafolio-web/blob/main/servidor.js" class="proy-btn-code" target="_blank">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+         </section>
+
+                    <section id="Contacto-informacion">
+            <div class="cont-header">
+                <p class="cont-label">Contacto</p>
+                <h2>¿Tienes una idea? Conversemos.</h2>
+                <p>Estoy disponible para proyectos freelance y oportunidades laborales.</p>
+            </div>
+
+            <div class="cont-grid">
+
+                <div class="cont-info">
+                    <p class="cont-info-titulo">Información de contacto</p>
+
+                    <div class="cont-item">
+                        <div class="cont-icono">✉</div>
+                        <div>
+                            <p class="cont-item-label">Email</p>
+                            <p class="cont-item-valor">Danilohei@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="cont-item">
+                        <div class="cont-icono">📱</div>
+                        <div>
+                            <p class="cont-item-label">Teléfono</p>
+                            <p class="cont-item-valor">3046622317</p>
+                        </div>
+                    </div>
+
+                    <div class="cont-item">
+                        <div class="cont-icono">📍</div>
+                        <div>
+                            <p class="cont-item-label">Ubicación</p>
+                            <p class="cont-item-valor">Sibaté, Cundinamarca</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cont-form">
+                    <form action="">
+                        <div class="form-grupo">
+                            <label for="nombre">Tu nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos">
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="email">Tu email</label>
+                            <input type="email" id="email" name="email" placeholder="Email..." required>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="mensaje">Tu mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Detalla tu idea de proyecto..."></textarea>
+                        </div>
+
+                        <button type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+
+            </div>
+        </section> 
+                    </main>
+
+                    <!-- Footer de pagina web-->
+        <footer>
+            <p>Danilo Rodriguez Diaz @2026</p>
+        </footer>
             <script src="./Poo.js"></script>
             <script src="./script.js"></script>
-        </body>
+    </body>
 </html>

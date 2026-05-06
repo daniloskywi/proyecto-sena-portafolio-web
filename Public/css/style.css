@@ -24,12 +24,6 @@
     --Tamaño-letras: 20px;
     --Grosor-letras: 600;
 }
-body.dark {
-    --color-fondo: #f4f4f4;   
-    --color-texto: #333333;   
-    --color-blanco: #ffffff;  
-    --color-primario: #007bff; 
-}
 
 /* ========================================
    Estilos base
@@ -38,7 +32,7 @@ body.dark {
 body{/*Estrutura de fondo*/
     color: var(--color-texto);
     background-color: var(--color-fondo);
-    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("./Img/foto de fondo 2.JPG");
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("../Img/foto de fondo 2.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -865,57 +859,6 @@ footer{
     background-color: var(--color-texto);
     color: var(--color-blanco);
     padding: 20px;
-}
-
-/* ========================================
-   Modo oscuro / switch
-   ======================================== */
-
-.switch {
-    position: fixed;
-    top: 230px;
-    right: 17px;
-    display: inline-block;
-    width: 50px;
-    height: 21px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--color-texto);
-    transition: .4s;
-    border-radius: 34px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 17px;
-    left: 4px;
-    bottom: 4px;
-    background-color: var(--color-blanco);
-    transition: .4s;
-    border-radius: 50%;
-}
-
-input:checked + .slider {
-    background-color: var(--color-primario);
-}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
 }
 
 /* ========================================

@@ -8,8 +8,11 @@ const app = express();
 // Le decimos al servidor que entienda datos en formato JSON
 app.use(express.json());
 
+const path = require('path');
+
 // Le decimos donde estan los archivos de tu pagina web
-app.use(express.static('./'));
+app.use(express.static(path.join(__dirname, 'Public')));
+app.use('/documentos', express.static(path.join(__dirname, 'documentos')));
 
 // Conexion con MySQL 
 const conexion = mysql.createConnection({

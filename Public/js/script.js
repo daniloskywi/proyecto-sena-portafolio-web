@@ -51,15 +51,6 @@ enlacesMenu.forEach(enlace => {
         });
     });
 });
-//Boton de cambio de color (toggle switch)
-const toggleTema = document.getElementById("boton-color");
-
-toggleTema.addEventListener("change", () => {
-    document.body.classList.toggle("dark");
-    // El toggle visual se actualiza automáticamente con CSS
-})
-
-
 //Anilzar el scroll para mostrar u ocultar el header
 // Header que se oculta al hacer scroll hacia abajo y aparece al subir
 let lastScrollTop = 0;

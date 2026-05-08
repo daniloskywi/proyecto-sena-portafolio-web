@@ -1,3 +1,4 @@
+require('dotenv').config();
 // Llamamos las librerias que instalamos
 const express = require('express');
 const mysql = require('mysql2');
@@ -8,18 +9,15 @@ const app = express();
 // Le decimos al servidor que entienda datos en formato JSON
 app.use(express.json());
 
-const path = require('path');
-
 // Le decimos donde estan los archivos de tu pagina web
-app.use(express.static(path.join(__dirname, 'Public')));
-app.use('/documentos', express.static(path.join(__dirname, 'documentos')));
+app.use(express.static('./public'));
 
 // Conexion con MySQL 
 const conexion = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'danilohei2002',  // cambia esto
-    database: 'mydb'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
 });
 
 // Ruta que recibe los datos del formulario

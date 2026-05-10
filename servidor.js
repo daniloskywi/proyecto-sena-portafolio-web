@@ -1,4 +1,6 @@
+
 require('dotenv').config();
+
 // Llamamos las librerias que instalamos
 const express = require('express');
 const mysql = require('mysql2');

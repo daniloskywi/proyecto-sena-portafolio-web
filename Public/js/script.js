@@ -35,7 +35,7 @@ miForm.addEventListener("submit", function(evento){
     });
 });
 
- //analizar codigo
+
 //Evento de lista para bajar y subir mas suave
 const enlacesMenu = document.querySelectorAll('nav ul li a');
 

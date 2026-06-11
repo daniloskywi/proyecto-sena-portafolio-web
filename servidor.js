@@ -1,42 +1,36 @@
 require('dotenv').config();
 
-const express    = require('express');
-const nodemailer = require('nodemailer');
+const express = require('express');
+const { Resend } = require('resend');
 
 const app = express();
 app.use(express.json());
 app.use(express.static('./Public'));
 
-const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
-    }
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-app.post('/contacto', function(req, res) {
+app.post('/contacto', async function(req, res) {
     const nombre  = req.body.nombre;
     const email   = req.body.email;
     const mensaje = req.body.mensaje;
 
-    transporter.sendMail({
-        from:    email,
-        to:      process.env.EMAIL_USER,
-        subject: `📩 Nuevo mensaje de ${nombre} - Portafolio`,
-        html: `
-            <h2>Nuevo mensaje desde tu portafolio</h2>
-            <p><strong>Nombre:</strong> ${nombre}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Mensaje:</strong> ${mensaje}</p>
-        `
-    }, function(errEmail) {
-        if (errEmail) {
-            console.error('Error al enviar email:', errEmail);
-            return res.json({ ok: false });
-        }
+    try {
+        await resend.emails.send({
+            from:    'Portafolio <onboarding@resend.dev>',
+            to:      process.env.EMAIL_USER,
+            subject: `📩 Nuevo mensaje de ${nombre} - Portafolio`,
+            html: `
+                <h2>Nuevo mensaje desde tu portafolio</h2>
+                <p><strong>Nombre:</strong> ${nombre}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Mensaje:</strong> ${mensaje}</p>
+            `
+        });
         res.json({ ok: true });
-    });
+    } catch (err) {
+        console.error('Error al enviar email:', err);
+        res.json({ ok: false });
+    }
 });
 
 app.listen(3000, function() {

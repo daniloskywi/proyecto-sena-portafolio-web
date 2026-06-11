@@ -1,9 +1,5 @@
 require('dotenv').config();
 
-import { Resend } from 'resend';
-
-
-
 const express = require('express');
 const { Resend } = require('resend');
 
@@ -11,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static('./Public'));
 
-const resend = new Resend('re_Zv6G2SEr_HEiD8Cb9P5rXz38iYMkzf6Yn');
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.post('/contacto', async function(req, res) {
     const nombre  = req.body.nombre;

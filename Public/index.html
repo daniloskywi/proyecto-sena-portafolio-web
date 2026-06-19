@@ -6,6 +6,7 @@
         <title>Portafolio Web</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     </head>
     <body>
             <!-- Header de pagina web-->
@@ -41,7 +42,8 @@
                         <li><a href="https://wa.link/d3wxdn" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
                     </ul>
                 <div class="botones-inicio">
-                    <button id="btn-presentacion" class="btn-primario-inicio">Ver presentación</button>
+                    <button id="btn-presentacion" class="btn-primario-inicio">✉ Ver mi presentación <span class="shimmer"></span></button>
+
                     <a href="../documentos/HV_Danilo_Rodriguez.pdf" class="btn-secundario-inicio" download>Descargar CV</a>
                 </div>
 
@@ -52,17 +54,35 @@
 
             <!-- Modal de presentación -->
                 <div id="modal-presentacion" class="modal">
-                    <div class="modal-contenido">
-                        <span class="cerrar-modal">&times;</span>
-                        <h2>Hola, soy Danilo Rodriguez Diaz</h2>
-                        <p>¡Hola! Soy Danilo Rodriguez Diaz, un apasionado aprendiz del SENA. A lo largo de mi trayectoria académica, he desarrollado habilidades en el diseño y desarrollo web, enfocándome en crear experiencias digitales atractivas y funcionales.
-                            Mi objetivo inmediato es aplicar mis conocimientos en un entorno real de producción a través de mi etapa práctica, contribuyendo al desarrollo de aplicaciones que mejoren la operatividad de las empresas. Estoy emocionado por la oportunidad de crecer profesionalmente y aportar valor a proyectos innovadores.</p>
-                         <p>¡Gracias por visitar mi portafolio! Si tienes alguna pregunta o estás interesado en colaborar, no dudes en contactarme.</p>
-                         <p>¡Espero tener la oportunidad de trabajar juntos pronto!</p>
-                          <p>Saludos cordiales,<br>Danilo Rodriguez Diaz
-                        </p>
-                    </div>
-                    </div>
+    <div class="carta-contenido">
+        <span class="cerrar-modal">&times;</span>
+
+        <div class="carta-encabezado">
+            <img src="./Img/imagen sobre mi.jpeg" alt="Danilo Rodriguez" class="carta-foto">
+            <div class="carta-titulo">
+                <p class="carta-de">Carta de presentación</p>
+                <h2>Danilo Rodriguez Diaz</h2>
+                <p class="carta-rol">Tecnólogo ADSI · Desarrollador Web</p>
+            </div>
+        </div>
+
+        <div class="carta-linea"></div>
+
+        <div class="carta-cuerpo">
+            <p>Estimado equipo,</p>
+            <p>Soy tecnólogo en formación en Análisis y Desarrollo de Software en el SENA. Me apasiona construir soluciones web funcionales y entender cómo funciona la tecnología por dentro, desde el código hasta el hardware.</p>
+            <p>Durante mi formación desarrollé habilidades en <strong>HTML, CSS, JavaScript, Node.js y MySQL</strong>, y apliqué ese conocimiento en un proyecto real desplegado en producción. Estoy listo para aportar desde el primer día.</p>
+            <p>Busco una oportunidad donde pueda crecer, aprender y contribuir con compromiso y dedicación.</p>
+            <p class="carta-firma">Atentamente,<br><strong>Danilo Rodriguez Diaz</strong></p>
+        </div>
+
+        <div class="carta-pie">
+            <a href="https://wa.me/573046622317" target="_blank" class="carta-btn-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://www.linkedin.com/in/danilo-rodriguez-a19590254/" target="_blank" class="carta-btn-li"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="../documentos/HV_Danilo_Rodriguez.pdf" download class="carta-btn-cv">⬇ Descargar CV</a>
+        </div>
+    </div>
+</div>
             </section>
 
 
@@ -75,7 +95,7 @@
                     <h2>Diseñador &amp; Desarrollador Web</h2>
 
                     <p class="sm-bio">Soy Danilo Rodríguez Díaz, tecnólogo en formación en Análisis y Desarrollo de Software en el SENA. Me apasiona la tecnología en todas sus formas: desde construir soluciones web hasta diagnosticar y mantener equipos de cómputo.
-Disfruto entender cómo funcionan las cosas por dentro, ya sea un sistema, una aplicación o un PC. Mi objetivo es combinar el desarrollo de software con el conocimiento de hardware para ofrecer soluciones tecnológicas completas. Actualmente sigo aprendiendo y creciendo — porque en tecnología siempre hay algo nuevo por dominar.</p>
+                        Disfruto entender cómo funcionan las cosas por dentro, ya sea un sistema, una aplicación o un PC. Mi objetivo es combinar el desarrollo de software con el conocimiento de hardware para ofrecer soluciones tecnológicas completas. Actualmente sigo aprendiendo y creciendo — porque en tecnología siempre hay algo nuevo por dominar.</p>
 
                     <p class="sm-subtitulo">Experiencia</p>
                     <div class="exp-item">
@@ -89,18 +109,17 @@ Disfruto entender cómo funcionan las cosas por dentro, ya sea un sistema, una a
 
                     <p class="sm-subtitulo">Habilidades técnicas</p>
                     <ul class="lista-habilidades">
-                        <li> <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">HTML5</a></li>
-                        <li> <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">CSS3</a></li>
-                        <li> <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">JavaScript</a></li>
-                        <li> <a href="https://www.figma.com/" target="_blank">Figma</a></li>
-                        <li> <a href="https://www.figma.com/blog/prototyping/" target="_blank">Prototipado</a></li>
-                        <li> <a href="https://www.scrum.org/" target="_blank">Metodologias Agiles</a></li>
-                        <li> <a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
-                        <li> <a href="https://git-scm.com/" target="_blank">Git</a></li>
-                        <li> <a href="https://nodejs.org/" target="_blank">node.js</a></li>
-                    </ul>
+                        <li><i class="devicon-html5-plain colored"></i><span>HTML5</span></li>
+                        <li><i class="devicon-css3-plain colored"></i><span>CSS3</span></li>
+                        <li><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></li>
+                        <li><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></li>
+                        <li><i class="devicon-mysql-plain colored"></i><span>MySQL</span></li>
+                        <li><i class="devicon-git-plain colored"></i><span>Git</span></li>
+                        <li><i class="devicon-github-original colored"></i><span>GitHub</span></li>
+                        <li><i class="devicon-java-plain colored"></i><span>Java</span></li>
+                    </ul>   
 
-                    <a href="../documentos/HV_Danilo_Rodriguez.pdf" class="btn-primario" download="CV Danilo Rodriguez Diaz">⬇ Descargar CV</a>
+                
                 </div>
 
                 <div class="sobre-mi-foto">
@@ -140,11 +159,11 @@ Disfruto entender cómo funcionan las cosas por dentro, ya sea un sistema, una a
 
                 <article class="proy-card">
                     <div class="proy-img">
-                        <img src="" alt=""> 
+                        <img src="https://plus.unsplash.com/premium_photo-1720192861694-f7bf446349fa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> 
                     </div>
                     <div class="proy-body">
-                        <span class="proy-tag">Proyecto</span>
-                        <h3>Proximo proyecto</h3>
+                        <span class="proy-tag">Proximo Proyecto</span>
+                        <h3>En desarrollo</h3>
                         <p>Proyecto en desarrollo</p>
                         <div class="proy-links">
                             <a href="#" class="proy-btn-demo">Ver demo</a>
@@ -209,6 +228,19 @@ Disfruto entender cómo funcionan las cosas por dentro, ya sea un sistema, una a
                         <div class="form-grupo">
                             <label for="mensaje">Tu mensaje</label>
                             <textarea id="mensaje" name="mensaje" placeholder="Detalla tu idea de proyecto..."></textarea>
+                        </div>
+
+                        <!-- Opciones de servicio -->
+
+                        <div class="radio-grupo">
+                            <input type="radio" id="web" name="servicio" value="desarrollo-web">
+                            <label for="web">Desarrollo Web</label>
+
+                            <input type="radio" id="ofimatica" name="servicio" value="ofimatica">
+                            <label for="ofimatica">Ofimática</label>
+
+                            <input type="radio" id="otro" name="servicio" value="otro">
+                            <label for="otro">Otro</label>
                         </div>
 
                         <button type="submit">Enviar mensaje</button>

@@ -6,6 +6,7 @@ const { Resend } = require('resend');
 const app = express();
 app.use(express.json());
 app.use(express.static('./Public'));
+app.use('/documentos', express.static('./documentos')); 
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
